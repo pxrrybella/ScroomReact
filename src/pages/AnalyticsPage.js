@@ -1,22 +1,22 @@
 import React from "react";
 import { Banner } from "../components";
-import { Menu } from "../components/Menu";
 import Sprints from "../components/Sprints";
-import Survey from "../components/Survey";
+import Analytics from "../components/Analytics";
+import { MenuAnalytics } from "../components/Menu";
 
-const IndexPage = () => {
+const AnalyticsPage = () => {
     return (
         <div className="pag">
         <Banner/>
         <div className='row'>
             <div className='row'>
-                <Menu/>
+                <MenuAnalytics/>
                 <Sprints/>
-                <Survey/>
+                <Analytics/>
             </div>
         </div>
     </div>
     )
 }
 
-export default IndexPage;
+export default AnalyticsPage;

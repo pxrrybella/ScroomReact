@@ -1,8 +1,8 @@
 import React from "react";
-import AuxIsa from "../components/AuxIsa";
+import { AuxIsa } from "../components/AuxIsa";
 
 const AuxPage = () => {
-    <Analytics/>
+    <AuxIsa/>
 }
 
 export default AuxPage;
