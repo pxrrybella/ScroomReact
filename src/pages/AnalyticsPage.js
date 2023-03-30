@@ -6,7 +6,7 @@ import { MenuAnalytics } from "../components/Menu";
 
 const AnalyticsPage = () => {
     return (
-        <div className="pag">
+        <div className="flex-body">
         <Banner/>
         <div className='row'>
             <div className='row'>

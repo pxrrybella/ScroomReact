@@ -1,7 +1,7 @@
 import { Banner } from "./Banner";
 import { BannerNoUser } from "./Banner";
 import { render } from "react-dom";
-import { AuxIsa } from "./Chart";
+import { LineChart } from "./LineChart";
 
 export {
     Banner,
@@ -9,5 +9,5 @@ export {
 }
 
 const rootElement = document.getElementById("root");
-render(<AuxIsa />, rootElement);
+render(<LineChart />, rootElement);
 

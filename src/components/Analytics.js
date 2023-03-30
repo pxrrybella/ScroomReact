@@ -1,12 +1,12 @@
 import React from "react";
-import { Chart } from "./Chart";
+import { LineChart } from "./LineChart";
 
 const Analytics = () => {
     return (
         <div className="col-sm-7 mt-5">
             <div class="card text-center mb-3">
                 <div class="card-body">
-                    <Chart/>
+                    <LineChart/>
                 </div>
             </div>
         </div>

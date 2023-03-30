@@ -31,7 +31,7 @@ export const options = {
   },
 };
 
-export function Chart() {
+export function LineChart() {
   return (
     <Chart
       chartType="Line"
