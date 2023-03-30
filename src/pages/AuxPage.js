@@ -1,5 +1,5 @@
 import React from "react";
-import { AuxIsa } from "../components/AuxIsa";
+import { AuxIsa } from "../components/Chart";
 
 const AuxPage = () => {
     <AuxIsa/>

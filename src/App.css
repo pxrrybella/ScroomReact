@@ -62,3 +62,13 @@ body {
     background-color: #bbc794;
     border: 1px solid #CCD5AE;
 }
+
+.login {
+    background-color: #53729a68;
+    border-radius: 5px;
+}
+
+.empty-space {
+    margin: 150px;
+    height: 9vh;
+}

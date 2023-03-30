@@ -1,7 +1,7 @@
 import { Banner } from "./Banner";
 import { BannerNoUser } from "./Banner";
 import { render } from "react-dom";
-import { AuxIsa } from "./AuxIsa";
+import { AuxIsa } from "./Chart";
 
 export {
     Banner,

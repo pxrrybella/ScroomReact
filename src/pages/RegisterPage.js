@@ -5,10 +5,11 @@ import Register from "../components/Register";
 
 const RegisterPage = () => {
     return (
-        <>
+        <div className="flex-body">
         <BannerNoUser/>
         <Register/>
-        </>
+        <div className="empty-space"></div>
+        </div>
     )
 }
 

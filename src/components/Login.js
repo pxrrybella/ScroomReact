@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 
 const Login = () => {
     return (
-        <div className="col-3 m-3 text-center d-flex flex-column align-items-center shadow mx-auto">
-            <h4 className="mt-4">Iniciar sesión/registrarse</h4>
+        <div className="login col-3 m-3 text-center d-flex flex-column align-items-center shadow mx-auto">
+            <h4 className="mt-4">Iniciar sesión</h4>
             <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label"></label>
                 <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Correo electrónico"></input>

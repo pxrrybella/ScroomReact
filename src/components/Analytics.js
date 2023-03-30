@@ -1,12 +1,12 @@
 import React from "react";
-import { AuxIsa } from "./AuxIsa";
+import { Chart } from "./Chart";
 
 const Analytics = () => {
     return (
         <div className="col-sm-7 mt-5">
             <div class="card text-center mb-3">
                 <div class="card-body">
-                    <AuxIsa/>
+                    <Chart/>
                 </div>
             </div>
         </div>

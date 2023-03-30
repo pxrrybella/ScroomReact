@@ -5,10 +5,12 @@ import Login from "../components/Login";
 
 const LoginPage = () => {
     return (
-        <>
-        <BannerNoUser/>
-        <Login/>
-        </>
+        <div className="flex-body">
+            <BannerNoUser />
+            <Login />
+            <div className="empty-space">
+            </div>
+        </div>
     )
 }
 

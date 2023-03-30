@@ -31,7 +31,7 @@ export const options = {
   },
 };
 
-export function AuxIsa() {
+export function Chart() {
   return (
     <Chart
       chartType="Line"
