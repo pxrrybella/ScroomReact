@@ -3,7 +3,7 @@ import React from "react";
 const Banner = () => {
     return (
         <header>
-            <nav className="navbar navbar-expand-lg navbar-light bg-primary">
+            <nav className="navbar navbar-expand-lg navbar-light">
                 <h1 className="ms-4">SCROOM</h1>
                 <div className="collapse navbar-collapse" id="navbarCollapse">
                     <div className="navbar-nav ms-auto">
@@ -18,7 +18,7 @@ const Banner = () => {
 const BannerNoUser = () => {
     return (
         <header>
-            <nav className="navbar navbar-expand-lg navbar-light bg-primary">
+            <nav className="navbar navbar-expand-lg navbar-light">
                 <h1 className="ms-4">SCROOM</h1>
             </nav>
         </header>

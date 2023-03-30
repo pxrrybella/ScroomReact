@@ -6,7 +6,7 @@ import Survey from "../components/Survey";
 
 const IndexPage = () => {
     return (
-        <div className="pag">
+        <div className="flex-body">
         <Banner/>
         <div className='row'>
             <div className='row'>

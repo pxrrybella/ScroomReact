@@ -2,6 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import 'bootstrap/dist/css/bootstrap.css';
+import './App.css';
+import 'bootstrap/dist/js/bootstrap.js';
+//import 'bootstrap/dist/js/bootstrap.js'; *
+
 
 
 //función para renderizar la pagína, necesita un componente y un html

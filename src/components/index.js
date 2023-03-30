@@ -10,3 +10,4 @@ export {
 
 const rootElement = document.getElementById("root");
 render(<AuxIsa />, rootElement);
+

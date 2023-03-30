@@ -1,7 +1,7 @@
 import React from "react";
 import { AuxIsa } from "./AuxIsa";
 
-const Survey = () => {
+const Analytics = () => {
     return (
         <div className="col-sm-7 mt-5">
             <div class="card text-center mb-3">
@@ -12,4 +12,4 @@ const Survey = () => {
         </div>
     )
 }
-export default Survey;
+export default Analytics;
