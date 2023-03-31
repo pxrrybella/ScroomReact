@@ -4,7 +4,7 @@ import { Menu } from "../components/Menu";
 import Sprints from "../components/Sprints";
 import Survey from "../components/Survey";
 
-const IndexPage = () => {
+const DashboardPage = () => {
     return (
         <div className="flex-body">
         <Banner/>
@@ -19,4 +19,4 @@ const IndexPage = () => {
     )
 }
 
-export default IndexPage;
+export default DashboardPage;

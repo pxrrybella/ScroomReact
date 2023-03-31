@@ -40,7 +40,7 @@ body {
     background-color: #F6F3EE;
 }
 
-.carousel-item {
+.carousel-item-survey {
     height: 54vh;
     background-color: #F6F3EE;
     border: none;
@@ -71,4 +71,14 @@ body {
 .empty-space {
     margin: 150px;
     height: 9vh;
+}
+
+.btn-secondary {
+    background-color: #bbc794;
+    border: 1px solid #bbc794;
+}
+
+.btn-secondary:hover {
+    background-color: #a4b371;
+    border: 1px solid #a2b562;
 }

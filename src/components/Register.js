@@ -20,7 +20,7 @@ const Register = () => {
                     <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-label px-3"></label> <input type="password" class="form-control" id="password" name="password" placeholder="Contraseña"/> </div>
                 </div>
                 <div class="row justify-content-end mt-4">
-                    <Link to="/IndexPage"><button class="btn btn-primary " type="button">Entrar</button></Link>
+                    <Link to="/DashboardPage"><button class="btn btn-primary " type="button">Entrar</button></Link>
                 </div>
                 <div className="text-center m-3">
                     <h6>¿Ya tienes una cuenta? <Link to="/Login">Inicia sesión</Link> </h6>

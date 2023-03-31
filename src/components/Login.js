@@ -17,7 +17,7 @@ const Login = () => {
                 <h6>¿Olvidaste tu contraseña?</h6>
             </div>
             <div class="d-grid gap-2 col-3 mx-auto">
-            <Link to="/IndexPage"><button class="btn btn-primary " type="button">Entrar</button></Link>
+            <Link to="/DashboardPage"><button class="btn btn-primary " type="button">Entrar</button></Link>
             </div>
             <div className="text-center m-3">
                 <h6>¿No tiene una cuenta? <Link to="/Register">Crear cuenta</Link> </h6>
