@@ -9,7 +9,7 @@ const Survey = () => {
                         <div class="carousel-item carousel-item-survey active">
                             <h5 class="card-title">Encuesta Sprint 1</h5>
                             <blockquote class="blockquote">
-                                <p class="mt-4">¿Qué tan estresado te has sentido en este Sprint?</p>
+                                <p class="mt-4">¿Qué tan estresado te sentiste en este Sprint?</p>
                                 <div class="btn-group me-2" role="group" aria-label="First group">
                                     <button type="button" class="btn btn-dark">1</button>
                                     <button type="button" class="btn btn-dark">2</button>

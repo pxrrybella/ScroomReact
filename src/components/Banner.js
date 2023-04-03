@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Banner = () => {
+const Banner = ({ userweb }) => {
     return (
         <header>
             <nav className="navbar navbar-expand-lg navbar-light">
@@ -10,10 +10,10 @@ const Banner = () => {
                     <div className="navbar-nav ms-auto">
                         <div class="dropdown">
                             <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Nombre de usuario
+                                {userweb => <span>{userweb.first_name}</span>}
                             </button>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Ajustes</a></li>
+                                <li><a class="dropdown-item" href="/">Ajustes</a></li>
                                 <li><a class="dropdown-item" href="/">Cerrar sesión</a></li>
                             </ul>
                         </div>
