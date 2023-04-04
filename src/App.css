@@ -33,7 +33,7 @@ body {
 .menu {
     background-color: #f6f3ee7f;
     height: 100vh;
-    width: 45vh;
+    width: 40vh;
 }
 
 .card-title {
@@ -41,21 +41,32 @@ body {
 }
 
 .carousel-item-survey {
-    height: 54vh;
+    height: 60vh;
     background-color: #F6F3EE;
     border: none;
-    border-radius: 5px;
+    border-radius: 20px;
 }
 
-.carousel-control-next-icon, .carousel-control-prev-icon {
-    color: #43414E;
-    background-color: #43414E;
+.col-sm-7 .carousel-control-next-icon, .col-sm-7 .carousel-control-prev-icon {
     border-radius: 5px;
+    height: 100%;
+    width: 100%;
+    background-color: #CCD5AE;
+}
+.col-sm-7 .carousel-control-next, .col-sm-7 .carousel-control-prev{
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 .btn-primary {
     background-color: #CCD5AE;
     border: 1px solid #CCD5AE;
+    width: 100px;
+    height: 50px;
+    color: black;
 }
 
 .btn-primary:hover {
@@ -81,4 +92,12 @@ body {
 .btn-secondary:hover {
     background-color: #a4b371;
     border: 1px solid #a2b562;
+}
+
+.carousel-item-survey p{
+    height: 120px;
+    width: 650px;
+    margin: 0 auto;
+    margin-top: 20px;
+    font-size: larger;
 }
