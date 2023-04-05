@@ -16,7 +16,6 @@ const Menu = () => {
                 <button type="button" class="text-sm-start btn btn-dark btn-lg m-1">Nombre Proyecto</button>
                 <button type="button" class="text-sm-start btn btn-dark btn-lg m-1">Nombre Proyecto</button>
                 <button type="button" class="text-sm-start btn btn-dark btn-lg m-1">Nombre Proyecto</button>
-                <Link to="/NewProject"><button type="button" class="text-center btn btn-dark btn-sm m-1">+</button></Link>
             </div>
         </div>
     )
@@ -37,7 +36,6 @@ const MenuAnalytics = () => {
                 <button type="button" class="text-sm-start btn btn-dark btn-lg m-1">Nombre Proyecto</button>
                 <button type="button" class="text-sm-start btn btn-dark btn-lg m-1">Nombre Proyecto</button>
                 <button type="button" class="text-sm-start btn btn-dark btn-lg m-1">Nombre Proyecto</button>
-                <Link to="/NewProject"><button type="button" class="text-center btn btn-dark btn-sm m-1">+</button></Link>
             </div>
         </div>
     )

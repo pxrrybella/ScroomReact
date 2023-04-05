@@ -20,9 +20,6 @@ const App = () => {
             <Route path='/DashboardPage' element={<DashboardPage/>}></Route>
             <Route path='/Setting' element={<SettingPage/>}></Route>
             <Route path='/ProjectSetting' element={<ProjectSettingPage/>}></Route>
-            <Route path='/CreateNewProject' element={<CreateNewProjectPage/>}></Route>
-            <Route path='/CodeProject' element={<ProjectCodePage/>}></Route>
-            <Route path='/EnterProjectCode' element={<EnterProjectCodePage/>}></Route>
         </Routes>
         </BrowserRouter>
     )
