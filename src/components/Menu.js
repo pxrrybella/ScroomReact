@@ -11,11 +11,12 @@ const Menu = () => {
                 <h4 class="mb-3 text-center">Nombre Proyecto</h4>
                 <a href="/Analytics"><button type="button" class="btn btn btn-dark">Ver análisis</button></a>
             </div>
-            <div className="d-flex flex-column col-m-4">
+            <div className="d-flex flex-column col-m-4 align-items-center">
                 <button type="button" class="text-sm-start btn btn-dark btn-lg m-1">Nombre Proyecto</button>
                 <button type="button" class="text-sm-start btn btn-dark btn-lg m-1">Nombre Proyecto</button>
                 <button type="button" class="text-sm-start btn btn-dark btn-lg m-1">Nombre Proyecto</button>
                 <button type="button" class="text-sm-start btn btn-dark btn-lg m-1">Nombre Proyecto</button>
+                <Link to="/NewProject"><button type="button" class="text-center btn btn-dark btn-sm m-1">+</button></Link>
             </div>
         </div>
     )
@@ -31,11 +32,12 @@ const MenuAnalytics = () => {
                 <h4 class="mb-3 text-center">Nombre Proyecto</h4>
                 <Link to="/DashboardPage"><button type="button" class="btn btn btn-dark">Ver encuesta</button></Link>
             </div>
-            <div className="d-flex flex-column col-m-4">
+            <div className="d-flex flex-column col-m-4 align-items-center">
                 <button type="button" class="text-sm-start btn btn-dark btn-lg m-1">Nombre Proyecto</button>
                 <button type="button" class="text-sm-start btn btn-dark btn-lg m-1">Nombre Proyecto</button>
                 <button type="button" class="text-sm-start btn btn-dark btn-lg m-1">Nombre Proyecto</button>
                 <button type="button" class="text-sm-start btn btn-dark btn-lg m-1">Nombre Proyecto</button>
+                <Link to="/NewProject"><button type="button" class="text-center btn btn-dark btn-sm m-1">+</button></Link>
             </div>
         </div>
     )
