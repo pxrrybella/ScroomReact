@@ -41,32 +41,29 @@ body {
 }
 
 .carousel-item-survey {
-    height: 60vh;
+    height: 70vh;
     background-color: #F6F3EE;
     border: none;
     border-radius: 20px;
 }
 
-.col-sm-7 .carousel-control-next-icon, .col-sm-7 .carousel-control-prev-icon {
+.survey .carousel-control-next-icon, .survey .carousel-control-prev-icon {
     border-radius: 5px;
     height: 100%;
     width: 100%;
     background-color: #CCD5AE;
 }
-.col-sm-7 .carousel-control-next, .col-sm-7 .carousel-control-prev{
-    width: 50px;
-    height: 50px;
-    margin-top: 50px;
-    margin-left: 50px;
-    margin-right: 50px;
+.survey .carousel-control-next, .survey .carousel-control-prev{
+    width: 7vh;
+    height: 7vh;
+    margin-top: 7vh;
+    margin-left: 5vh;
+    margin-right: 5vh;
 }
 
 .btn-primary {
     background-color: #CCD5AE;
     border: 1px solid #CCD5AE;
-    width: 100px;
-    height: 50px;
-    color: black;
 }
 
 .btn-primary:hover {
@@ -100,9 +97,14 @@ body {
 }
 
 .carousel-item-survey p{
-    height: 120px;
-    width: 650px;
+    height: 12vh;
+    width: 80vh;
     margin: 0 auto;
-    margin-top: 20px;
-    font-size: larger;
+    font-size: large;
+}
+.survey-options{
+    margin-top: 4vh;
+}
+.survey-send{
+    color: black;
 }
