@@ -6,6 +6,7 @@ import LoginPage from "./pages/LoginPage";
 import RegisterPage from "./pages/RegisterPage";
 import HomePage from "./pages/HomePage";
 import SettingPage from "./pages/SettingPage";
+import ProjectSettingPage from "./pages/ProjectSettingPage";
 
 
 const App = () => {
@@ -18,6 +19,10 @@ const App = () => {
             <Route path='/Register' element={<RegisterPage/>}></Route>
             <Route path='/DashboardPage' element={<DashboardPage/>}></Route>
             <Route path='/Setting' element={<SettingPage/>}></Route>
+            <Route path='/ProjectSetting' element={<ProjectSettingPage/>}></Route>
+            <Route path='/CreateNewProject' element={<CreateNewProjectPage/>}></Route>
+            <Route path='/CodeProject' element={<ProjectCodePage/>}></Route>
+            <Route path='/EnterProjectCode' element={<EnterProjectCodePage/>}></Route>
         </Routes>
         </BrowserRouter>
     )
