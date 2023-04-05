@@ -1,9 +1,9 @@
 import React from "react";
-import { Banner, CreateProject } from "../components";
+import { Banner, ProjectCode } from "../components";
 import { useEffect, useState } from "react";
 import { getUserwebFirstLastName } from "../services/UserwebService";
 
-const CreateNewProjectPage = () => {
+const ProjectCodePage = () => {
 
     const [userweb, setUserweb] = useState([]);
 
@@ -21,7 +21,7 @@ const CreateNewProjectPage = () => {
         <Banner userweb={userweb}/>
         <div className='row mt-5'>
             <div className='row'>
-                <CreateProject/>
+                <ProjectCode/>
             </div>
         </div>
         <div className="empty-space2"></div>
@@ -29,4 +29,4 @@ const CreateNewProjectPage = () => {
     )
 }
 
-export default CreateNewProjectPage;
+export default ProjectCodePage;

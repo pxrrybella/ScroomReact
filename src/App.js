@@ -9,6 +9,8 @@ import SettingPage from "./pages/SettingPage";
 import ProjectSettingPage from "./pages/ProjectSettingPage";
 import NewProjectPage from "./pages/NewProjectPage";
 import CreateNewProjectPage from "./pages/CreateNewProjectPage";
+import ProjectCodePage from "./pages/ProjectCodePage"
+import EnterProjectCodePage from "./pages/EnterProjectCodePage";
 
 
 const App = () => {
@@ -24,6 +26,9 @@ const App = () => {
             <Route path='/Setting' element={<SettingPage/>}></Route>
             <Route path='/ProjectSetting' element={<ProjectSettingPage/>}></Route>
             <Route path='/CreateNewProject' element={<CreateNewProjectPage/>}></Route>
+            <Route path='/CodeProject' element={<ProjectCodePage/>}></Route>
+            <Route path='/EnterProjectCode' element={<EnterProjectCodePage/>}></Route>
+            
         </Routes>
         </BrowserRouter>
     )
