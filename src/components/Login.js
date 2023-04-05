@@ -11,7 +11,7 @@ const Login = () => {
             </div>
             <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label"></label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Contraseña"></input>
+                <input type="password" class="form-control" id="exampleFormControlInput1" placeholder="Contraseña"></input>
             </div>
             <div className="text-center m-3">
                 <h6>¿Olvidaste tu contraseña?</h6>

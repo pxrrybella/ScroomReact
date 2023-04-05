@@ -13,7 +13,7 @@ const Banner = ({ userweb }) => {
                                 {userweb.first_name + " " + userweb.last_name}
                             </button>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="/">Ajustes</a></li>
+                                <li><a class="dropdown-item" href="/Setting">Ajustes</a></li>
                                 <li><a class="dropdown-item" href="/">Cerrar sesión</a></li>
                             </ul>
                         </div>
