@@ -6,6 +6,7 @@ import LoginPage from "./pages/LoginPage";
 import RegisterPage from "./pages/RegisterPage";
 import HomePage from "./pages/HomePage";
 import SettingPage from "./pages/SettingPage";
+import ProjectSettingPage from "./pages/ProjectSettingPage";
 import NewProjectPage from "./pages/NewProjectPage";
 import CreateNewProjectPage from "./pages/CreateNewProjectPage";
 
@@ -21,6 +22,7 @@ const App = () => {
             <Route path='/Register' element={<RegisterPage/>}></Route>
             <Route path='/DashboardPage' element={<DashboardPage/>}></Route>
             <Route path='/Setting' element={<SettingPage/>}></Route>
+            <Route path='/ProjectSetting' element={<ProjectSettingPage/>}></Route>
             <Route path='/CreateNewProject' element={<CreateNewProjectPage/>}></Route>
         </Routes>
         </BrowserRouter>
