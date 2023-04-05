@@ -11,8 +11,10 @@ const ProjectsButtons = () => {
                 </Link>
             </button>
             <button type="button" class="text-sm-start btn btn-dark m-1 col-3">
+            <Link to="/EnterProjectCode">
                 <h2>Ingresar a proyecto existente</h2>
                 <p>¿Ya tienes una invitación? ¡Ingresa el código acá!</p>
+                </Link>
             </button>
         </div>
     )

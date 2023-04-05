@@ -8,6 +8,8 @@ import HomePage from "./pages/HomePage";
 import SettingPage from "./pages/SettingPage";
 import NewProjectPage from "./pages/NewProjectPage";
 import CreateNewProjectPage from "./pages/CreateNewProjectPage";
+import ProjectCodePage from "./pages/ProjectCodePage"
+import EnterProjectCodePage from "./pages/EnterProjectCodePage";
 
 
 const App = () => {
@@ -22,6 +24,9 @@ const App = () => {
             <Route path='/DashboardPage' element={<DashboardPage/>}></Route>
             <Route path='/Setting' element={<SettingPage/>}></Route>
             <Route path='/CreateNewProject' element={<CreateNewProjectPage/>}></Route>
+            <Route path='/CodeProject' element={<ProjectCodePage/>}></Route>
+            <Route path='/EnterProjectCode' element={<EnterProjectCodePage/>}></Route>
+            
         </Routes>
         </BrowserRouter>
     )
