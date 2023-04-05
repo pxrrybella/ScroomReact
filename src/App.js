@@ -5,6 +5,7 @@ import DashboardPage from "./pages/DashboardPage";
 import LoginPage from "./pages/LoginPage";
 import RegisterPage from "./pages/RegisterPage";
 import HomePage from "./pages/HomePage";
+import SettingPage from "./pages/SettingPage";
 
 
 const App = () => {
@@ -16,6 +17,7 @@ const App = () => {
             <Route path='/Login' element={<LoginPage/>}></Route>
             <Route path='/Register' element={<RegisterPage/>}></Route>
             <Route path='/DashboardPage' element={<DashboardPage/>}></Route>
+            <Route path='/Setting' element={<SettingPage/>}></Route>
         </Routes>
         </BrowserRouter>
     )

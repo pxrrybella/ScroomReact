@@ -8,7 +8,7 @@ const LoginPage = () => {
         <div className="flex-body">
             <BannerNoUser />
             <Login />
-            <div className="empty-space">
+            <div className="empty-space2">
             </div>
         </div>
     )

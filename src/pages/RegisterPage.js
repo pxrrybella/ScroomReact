@@ -8,7 +8,7 @@ const RegisterPage = () => {
         <div className="flex-body">
         <BannerNoUser/>
         <Register/>
-        <div className="empty-space"></div>
+        <div className="empty-space2"></div>
         </div>
     )
 }

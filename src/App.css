@@ -81,7 +81,12 @@ body {
 
 .empty-space {
     margin: 150px;
-    height: 9vh;
+    height: 20vh;
+}
+
+.empty-space2 {
+    margin: 150px;
+    height: 40vh;
 }
 
 .btn-secondary {
