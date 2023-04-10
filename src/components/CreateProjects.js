@@ -18,9 +18,9 @@ const projectDefault = {
     "admin_name": ""
 }
 
-const CreateProject = ( {agregarProject} ) => {
+const CreateProject = ({ agregarProject }) => {
 
-    function codeGenerate(){
+    function codeGenerate() {
         const code = (Math.floor(1000000 + Math.random() * 9000000));
         return code;
     }
@@ -31,27 +31,41 @@ const CreateProject = ( {agregarProject} ) => {
         const handleInputChange = {
             ...project,
             [p.target.name]: p.target.value,
-            "project_code" : codeGenerate()
+            "project_code": codeGenerate()
         }
         setProject(handleInputChange);
     }
 
     function handleSubmit(e) {
         e.preventDefault();
-        console.log('You clicked submit.');
-        alert('El código de tu proyecto "' + project.project_name + '" tiene código: ' + project.project_code);
-      }
+    }
 
     return (
         <div className="card m-auto col-6 p-4">
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">¡Atención!</h1>
+                        </div>
+                        <div class="modal-body">
+                        Tu proyecto "{project.project_name}" tiene código: {project.project_code}.
+                        <br/>Recuerda que con este código único podrás invitar a tu equipo.
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary"><a href="/DashboardPage">Ir al Dashboard</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <h2 className="mb-4">Nombre del proyecto</h2>
             <form onSubmit={handleSubmit}>
-            <input type="text" max={30} className="form-control form-control-lg text-center" placeholder="Ingrese aquí el nombre del proyecto" id="project_name" name="project_name" value={project_name} onChange={handleInputChange}></input>
-            {/* project.project_name!=="" ? (<div className="text-center"> <h1>Tu código: {codeGenerate()}</h1> <Link to="/DashboardPage">Siguiente</Link></div>):(<></>)*/}
-            <div className="d-flex align-items-center justify-content-center">
-            <button type="submit" className="btn btn-primary mt-4" onClick={() => agregarProject(project)}>Obtener código</button>
-            <Link to="/DashboardPage" className="ms-2"><button type="submit" className="btn btn-primary mt-4">Ir al Dashboard</button></Link>
-            </div>
+                <input type="text" max={30} className="form-control form-control-lg text-center" placeholder="Ingrese aquí el nombre del proyecto" id="project_name" name="project_name" value={project_name} onChange={handleInputChange}></input>
+                {/* project.project_name!=="" ? (<div className="text-center"> <h1>Tu código: {codeGenerate()}</h1> <Link to="/DashboardPage">Siguiente</Link></div>):(<></>)*/}
+                <div className="d-flex align-items-center justify-content-center">
+                    <button type="submit" className="btn btn-primary mt-4" onClick={() => agregarProject(project)} data-bs-toggle="modal" data-bs-target="#exampleModal">Obtener código</button>
+                    
+                </div>
             </form>
         </div>
     )
