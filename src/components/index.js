@@ -10,7 +10,7 @@ import { ProjectCodeEnter } from "./CreateProjects";
 export {
     Banner,
     BannerNoUser,
-    Register
+    Register,
     CreateProject,
     ProjectCodeEnter,
     ProjectCode
