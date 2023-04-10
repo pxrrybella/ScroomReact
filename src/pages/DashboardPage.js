@@ -4,19 +4,19 @@ import { Menu } from "../components/Menu";
 import Sprints from "../components/Sprints";
 import Survey from "../components/Survey";
 import { useEffect, useState } from "react";
-import { getUserwebFirstLastName } from "../services/UserwebService";
+import { getUserwebByUsername } from "../services/UserwebService";
 
 const DashboardPage = () => {
 
     const [userweb, setUserweb] = useState([]);
 
-    const getUserwebNombreApellido = async() => {
-        setUserweb(await getUserwebFirstLastName());
+    const getUserwebId = async() => {
+        setUserweb(await getUserwebByUsername());
     }
 
     useEffect(() => {
         //instrucciones
-        getUserwebNombreApellido();
+        getUserwebId();
     }, [])
 
     return (

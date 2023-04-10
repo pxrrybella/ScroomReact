@@ -2,8 +2,8 @@ import axios from "axios";
 
 const baseURL = 'http://localhost:8080/userweb';
 
-const getUserwebFirstLastName = async() => {
-    const rest = await axios.get(baseURL+'/firstlastname/isabella345');
+const getUserwebByUsername = async() => {
+    const rest = await axios.get(baseURL+'/getById/isabella345');
     console.log(rest);
     return rest.data;
 }
@@ -35,4 +35,4 @@ const userwebDelete = async (id) => {
 
 
 
-export { getUserwebFirstLastName,userwebAdd, userwebEdit,userwebDelete}
+export { getUserwebByUsername,userwebAdd, userwebEdit,userwebDelete}

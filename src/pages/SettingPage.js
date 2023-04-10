@@ -1,19 +1,19 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import { Banner } from "../components";
-import { getUserwebFirstLastName } from "../services/UserwebService";
+import { getUserwebByUsername } from "../services/UserwebService";
 import Setting from "../components/Setting";
 
 
 const SettingPage = () => {
     const [userweb, setUserweb] = useState([]);
 
-    const getUserwebNombreApellido = async () => {
-        setUserweb(await getUserwebFirstLastName());
+    const getUserwebId = async () => {
+        setUserweb(await getUserwebByUsername());
     }
 
     useEffect(() => {
-        getUserwebNombreApellido();
+        getUserwebId();
     }, [])
     return (
         <div className="flex-body">

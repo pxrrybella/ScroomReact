@@ -2,12 +2,6 @@ import axios from "axios";
 
 const baseURL = 'http://localhost:8080/project';
 
-const getProject = async() => {
-    const rest = await axios.get(baseURL+'/Project/isabella345');
-    console.log(rest);
-    return rest.data;
-}
-
 const projectAdd = async (project)  => {
     const rest =  await axios.post(baseURL+"/save", project);
      console.log(rest);
@@ -30,4 +24,4 @@ const projectDelete = async (id) => {
 
 
 
-export { getProject,projectAdd, projectEdit,projectDelete}
+export { projectAdd, projectEdit, projectDelete }

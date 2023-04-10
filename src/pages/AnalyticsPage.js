@@ -4,18 +4,18 @@ import Sprints from "../components/Sprints";
 import Analytics from "../components/Analytics";
 import { MenuAnalytics } from "../components/Menu";
 import { useEffect, useState } from "react";
-import { getUserwebFirstLastName } from "../services/UserwebService";
+import { getUserwebByUsername } from "../services/UserwebService";
 
 const AnalyticsPage = () => {
     const [userweb, setUserweb] = useState([]);
 
-    const getUserwebNombreApellido = async() => {
-        setUserweb(await getUserwebFirstLastName());
+    const getUserwebId = async() => {
+        setUserweb(await getUserwebByUsername());
     }
 
     useEffect(() => {
         //instrucciones
-        getUserwebNombreApellido();
+        getUserwebId();
     }, [])
 
     return (

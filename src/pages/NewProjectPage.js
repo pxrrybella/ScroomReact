@@ -2,19 +2,19 @@ import React from "react";
 import { Banner } from "../components";
 import ProjectsButtons from "../components/ProjectsButtons";
 import { useEffect, useState } from "react";
-import { getUserwebFirstLastName } from "../services/UserwebService";
+import { getUserwebByUsername } from "../services/UserwebService";
 
 const NewProjectPage = () => {
 
     const [userweb, setUserweb] = useState([]);
 
-    const getUserwebNombreApellido = async() => {
-        setUserweb(await getUserwebFirstLastName());
+    const getUserwebId = async() => {
+        setUserweb(await getUserwebByUsername());
     }
 
     useEffect(() => {
         //instrucciones
-        getUserwebNombreApellido();
+        getUserwebId();
     }, [])
 
     return (

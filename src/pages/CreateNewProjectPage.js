@@ -1,19 +1,23 @@
 import React from "react";
 import { Banner, CreateProject } from "../components";
 import { useEffect, useState } from "react";
-import { getUserwebFirstLastName } from "../services/UserwebService";
+import { getUserwebByUsername } from "../services/UserwebService";
+import { projectAdd } from "../services/ProjectService";
 
 const CreateNewProjectPage = () => {
-
+    const [project, setProject] = useState([]);
     const [userweb, setUserweb] = useState([]);
 
-    const getUserwebNombreApellido = async() => {
-        setUserweb(await getUserwebFirstLastName());
+    const agregarProject = async(project) => {
+        await projectAdd(project);
+    }
+
+    const getUserwebId = async() => {
+        setUserweb(await getUserwebByUsername());
     }
 
     useEffect(() => {
-        //instrucciones
-        getUserwebNombreApellido();
+        getUserwebId();
     }, [])
 
     return (
@@ -21,7 +25,7 @@ const CreateNewProjectPage = () => {
         <Banner userweb={userweb}/>
         <div className='row mt-5'>
             <div className='row'>
-                <CreateProject/>
+                <CreateProject agregarProject={agregarProject}/>
             </div>
         </div>
         <div className="empty-space2"></div>

@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { BannerNoUser, Register } from "../components";
-import axios from "axios";
 import { userwebAdd } from "../services/UserwebService";
 import { companyGetAll } from "../services/CompanyService";
 
