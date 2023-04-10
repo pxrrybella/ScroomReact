@@ -37,6 +37,18 @@ const Menu = () => {
 }
 
 const MenuAnalytics = () => {
+    const [userwebProject, setUserwebProject] = useState([]);
+
+    const obtenerProjectsByUsername = async () => {
+        setUserwebProject(await getProjectsByUsername());
+        console.log(await getProjectsByUsername());
+    }
+
+    useEffect(() => {
+        //instrucciones
+        obtenerProjectsByUsername();
+    }, [])
+    
     return (
         <div className="menu col-sm-3">
             <div className="mt-2 mb-5 d-flex flex-column align-items-center">
@@ -47,10 +59,9 @@ const MenuAnalytics = () => {
                 <Link to="/DashboardPage"><button type="button" class="btn btn btn-dark">Ver encuesta</button></Link>
             </div>
             <div className="d-flex flex-column col-m-4 align-items-center">
-                <button type="button" class="text-sm-start btn btn-dark btn-lg m-1">Nombre Proyecto</button>
-                <button type="button" class="text-sm-start btn btn-dark btn-lg m-1">Nombre Proyecto</button>
-                <button type="button" class="text-sm-start btn btn-dark btn-lg m-1">Nombre Proyecto</button>
-                <button type="button" class="text-sm-start btn btn-dark btn-lg m-1">Nombre Proyecto</button>
+            {userwebProject.map(userwebProject => (
+                                <button type="button" class="text-sm-start btn btn-dark btn-lg m-1">{userwebProject}</button>
+                            ))}
                 <Link to="/NewProject"><button type="button" class="text-center btn btn-dark btn-sm m-1">+</button></Link>
             </div>
         </div>
