@@ -1,7 +1,22 @@
-import React from "react";
+import React, {useState} from "react";
 import { Link } from "react-router-dom";
 
 const Login = () => {
+     
+     const [email, setEmail] = useState("");
+     const [password, setPassword] = useState("");
+ 
+    
+     const handleSubmit = (e) => {
+         e.preventDefault();
+ 
+      
+         if (email === "usuario validado" && password === "contraseña validada ") {
+             console.log("Acceso permitido"); 
+         } else {
+             alert("usuario  o contraseña incorrectos. Por favor, inténtalo de nuevo."); 
+         }
+     }
     return (
         <div className="login col-3 m-3 text-center d-flex flex-column align-items-center shadow mx-auto">
             <h4 className="mt-4">Iniciar sesión</h4>
