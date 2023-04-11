@@ -7,11 +7,11 @@ const Login = () => {
      const [password, setPassword] = useState("");
  
     
-     const handleSubmit = (e) => {
+     const handleLogin = (e) => {
          e.preventDefault();
  
       
-         if (email === "usuario validado" && password === "contraseña validada ") {
+         if (email === "usaurio validado" && password === "contraseña validada ") {
              console.log("Acceso permitido"); 
          } else {
              alert("usuario  o contraseña incorrectos. Por favor, inténtalo de nuevo."); 
@@ -22,11 +22,23 @@ const Login = () => {
             <h4 className="mt-4">Iniciar sesión</h4>
             <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label"></label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Correo electrónico"></input>
+                <input type="email"
+                 class="form-control" 
+                 id="email" 
+                 placeholder="Correo electrónico"
+                 value={email}
+                 onChange={(e) => setEmail(e.target.value)}
+                 ></input>
             </div>
             <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label"></label>
-                <input type="password" class="form-control" id="exampleFormControlInput1" placeholder="Contraseña"></input>
+                <input type="password" 
+                class="form-control"
+                id="password"
+                placeholder="Contraseña"
+                onChange={(e) => setPassword(e.target.value)}
+                value={password}
+                ></input>
             </div>
             <div className="text-center m-3">
                 <h6>¿Olvidaste tu contraseña?</h6>
