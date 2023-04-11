@@ -3,10 +3,14 @@ import  { useEffect, useState } from "react";
 
 
 const userwebInit = {
+    "userweb_id":2,
     "user_name":"",
     "first_name":"",
     "last_name":"",
-    "user_password":""
+    "email":"",
+    "user_password":"",
+    "company_position":"",
+    "company_id":1
        
 }
   
@@ -21,7 +25,11 @@ const handleInputChange = (u) => {
     console.log(u);
     const handleFormValue = {
         ...userweb,
-        [userweb.target.name]: userweb.target.value,
+        // "email":userweb.email,
+        // "company_position":userweb.company_position,
+        // "company_id":userweb.company_id,
+        // "userweb_id":userweb.userweb_id,
+        [u.target.name]: u.target.value,
     }
     setUserweb(handleFormValue);
     console.log(userweb);
@@ -34,10 +42,10 @@ const handleInputChange = (u) => {
             "user_name":"",
             "first_name":"",
             "last_name":"",
-            "email":"",
+            "email":"yagura@email.com",
             "user_password":"",
-            "company_position":"",
-            "company_id":1
+            "company_position":"Q.A.",
+            "company_id":2
         })
 
         }
@@ -94,9 +102,12 @@ const handleInputChange = (u) => {
                 <p>Verificar cambios</p>
                 <input type="password" id="disabledTextInput" class="form-control" />
             </div>
-            {userwebEdited !== null ? (<div class="text-center m-3">
+            <div class="text-center m-3">
             <button class="btn btn-primary" onClick = {()=>editUserweb(userweb)}type="button">Guardar</button>
-            </div> ):(<></>)} 
+            </div>
+            {/* {userwebEdited !== null ? (<div class="text-center m-3">
+            <button class="btn btn-primary" onClick = {()=>editUserweb(userweb)}type="button">Guardar</button>
+            </div> ):(<></>)}  */}
             
             <div className="cancel text-center m-3">
                 <button class="btn btn-primary" onClick = {()=>setUserwebEdited(null)} type="button">Cancelar</button>
