@@ -7,6 +7,7 @@ const getUserwebByUsername = async() => {
     console.log(rest);
     return rest.data;
 }
+
 const userwebGetAll = async () => {
     const rest = await axios.get(baseURL+"/findAll");
     return rest.data;
@@ -35,4 +36,4 @@ const userwebDelete = async (id) => {
 
 
 
-export { getUserwebByUsername,userwebAdd, userwebEdit,userwebDelete}
+export { getUserwebByUsername, userwebAdd, userwebEdit, userwebDelete, userwebGetAll }
