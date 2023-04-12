@@ -15,4 +15,10 @@ const getUserByProject = async () => {
     return rest.data;
 }
 
-export { getProjectsByUsername, getUserByProject }
+const userProjectDelete = async (id) => {
+    const rest = await axios.delete(baseURL + "/delete/" + id);
+    console.log(rest);
+    return rest.data;
+}
+
+export { getProjectsByUsername, getUserByProject, userProjectDelete }
