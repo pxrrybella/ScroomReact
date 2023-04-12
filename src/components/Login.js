@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import { Link } from "react-router-dom";
 
-const Login = () => {
+const Login = ({userweb}) => {
      
      const [email, setEmail] = useState("");
      const [password, setPassword] = useState("");
@@ -11,9 +11,11 @@ const Login = () => {
          e.preventDefault();
  
       
-         if (email === "usaurio validado" && password === "contraseña validada ") {
+         if (email === userweb.email && password === userweb.user_password) {
+             console.log(userweb.email + " "  + userweb.user_password);
              console.log("Acceso permitido"); 
          } else {
+            console.log(userweb.email + " "  + userweb.user_password);
              alert("usuario  o contraseña incorrectos. Por favor, inténtalo de nuevo."); 
          }
      }
@@ -44,7 +46,9 @@ const Login = () => {
                 <h6>¿Olvidaste tu contraseña?</h6>
             </div>
             <div class="d-grid gap-2 col-3 mx-auto">
-            <Link to="/DashboardPage"><button class="btn btn-primary " type="button">Entrar</button></Link>
+            {email === userweb.email && password === userweb.user_password ? (<Link to="/DashboardPage"><button class="btn btn-primary " type="button"  >Entrar</button></Link>):(<button class="btn btn-primary " onClick={handleLogin} type="button"  >Entrar</button>)}
+            
+            
             </div>
             <div className="text-center m-3">
                 <h6>¿No tiene una cuenta? <Link to="/Register">Crear cuenta</Link> </h6>
