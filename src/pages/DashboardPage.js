@@ -5,13 +5,19 @@ import Sprints from "../components/Sprints";
 import Survey from "../components/Survey";
 import { useEffect, useState } from "react";
 import { getUserwebByUsername } from "../services/UserwebService";
+import { surveyAdd } from "../services/SurveyService";
 
 const DashboardPage = () => {
 
     const [userweb, setUserweb] = useState([]);
+    const [survey, setSurvey] = useState([]);
 
     const getUserwebId = async() => {
         setUserweb(await getUserwebByUsername());
+    }
+
+    const agregarEncuesta = async(survey) => {
+        await surveyAdd(survey);
     }
 
     useEffect(() => {
@@ -26,7 +32,7 @@ const DashboardPage = () => {
             <div className='row'>
                 <Menu/>
                 <Sprints/>
-                <Survey/>
+                <Survey agregarEncuesta={agregarEncuesta} userweb={userweb}/>
             </div>
         </div>
     </div>
