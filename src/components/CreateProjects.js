@@ -18,7 +18,7 @@ const projectDefault = {
     "admin_name": ""
 }
 
-const CreateProject = ({ agregarProject }) => {
+const CreateProject = ({ agregarProject, userweb }) => {
 
     function codeGenerate() {
         const code = (Math.floor(1000000 + Math.random() * 9000000));
@@ -26,18 +26,26 @@ const CreateProject = ({ agregarProject }) => {
     }
 
     const [project, setProject] = useState(projectDefault);
-    const { project_id, project_name, admin_name, project_code } = project;
+    const { project_name, admin_name, project_code } = project;
+
     const handleInputChange = (p) => {
         const handleInputChange = {
             ...project,
             [p.target.name]: p.target.value,
-            "project_code": codeGenerate()
+            "project_code": codeGenerate(),
+            "admin_name": userweb.user_name
         }
         setProject(handleInputChange);
     }
 
+
     function handleSubmit(e) {
         e.preventDefault();
+    }
+
+    const userwebProject = {
+        "userweb_id": userweb.userweb_id,
+        "project_id": project.project_id
     }
 
     return (
@@ -61,9 +69,8 @@ const CreateProject = ({ agregarProject }) => {
             <h2 className="mb-4">Nombre del proyecto</h2>
             <form onSubmit={handleSubmit}>
                 <input type="text" max={30} className="form-control form-control-lg text-center" placeholder="Ingrese aquí el nombre del proyecto" id="project_name" name="project_name" value={project_name} onChange={handleInputChange}></input>
-                {/* project.project_name!=="" ? (<div className="text-center"> <h1>Tu código: {codeGenerate()}</h1> <Link to="/DashboardPage">Siguiente</Link></div>):(<></>)*/}
                 <div className="d-flex align-items-center justify-content-center">
-                    <button type="submit" className="btn btn-primary mt-4" onClick={() => agregarProject(project)} data-bs-toggle="modal" data-bs-target="#exampleModal">Obtener código</button>
+                    <button type="submit" className="btn btn-primary mt-4" onClick={() => agregarProject(project, userwebProject)} data-bs-toggle="modal" data-bs-target="#exampleModal">Obtener código</button>
                     
                 </div>
             </form>

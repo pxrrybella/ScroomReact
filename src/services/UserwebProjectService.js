@@ -15,4 +15,10 @@ const getUserByProject = async () => {
     return rest.data;
 }
 
-export { getProjectsByUsername, getUserByProject }
+const userwebProjectAdd = async (userwebProject)  => {
+    const rest =  await axios.post(baseURL+"/save", userwebProject);
+     console.log(rest);
+     return rest.data;
+}
+
+export { getProjectsByUsername, getUserByProject, userwebProjectAdd }
