@@ -62,7 +62,7 @@ const Register = ({ agregarUserweb, company }) => {
                         </select>
                     </div>
                 </div>
-                <Link to="/DashboardPage"><button class="btn btn-primary row justify-content-end mt-4" type="button" onClick={() => agregarUserweb(userweb)}>Entrar</button></Link>
+                <Link to="/DashboardPage"><button class="btn btn-primary row justify-content-end mt-4" type="submit" onClick={() => agregarUserweb(userweb)}>Entrar</button></Link>
                 <div className="text-center m-3">
                     <h6>¿Ya tienes una cuenta? <Link to="/Login">Inicia sesión</Link> </h6>
                 </div>
