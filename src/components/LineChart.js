@@ -3,10 +3,10 @@ import { Chart } from "react-google-charts";
 
 export const data = [
   [
-    "Day",
-    "Guardians of the Galaxy",
-    "The Avengers",
-    "Transformers: Age of Extinction",
+    "Puntuación",
+    "Motivación",
+    "Responsabilidad personal",
+    "Ambiente laboral",
   ],
   [1, 37.8, 80.8, 41.8],
   [2, 30.9, 69.5, 32.4],
@@ -26,8 +26,8 @@ export const data = [
 
 export const options = {
   chart: {
-    title: "Box Office Earnings in First Two Weeks of Opening",
-    subtitle: "in millions of dollars (USD)",
+    title: "Visualización de respuestas",
+    subtitle: "Ordenada por categorías",
   },
 };
 
