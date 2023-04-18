@@ -1,14 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-/*
-cambiar nombre del proyecto
-agrgar o quitar miembros
-borrar proyecto */
-
 const ProjectSetting = () => {
     return (
-        <form class="row g-3 col-3 m-3 text-center d-flex flex-column align-items-center mx-auto">
+        <form class="col-3 m-3 text-center d-flex flex-column align-items-center mx-auto">
             <h2>Configuración de proyecto</h2>
             <div class="col-md-6">
                 <label for="inputEmail4" class="form-label">Cambiar nombre de proyecto</label>
@@ -26,7 +21,7 @@ const ProjectSetting = () => {
                 </div>
             </Link>
             <div className="eliminar text-center m-3">
-                <button type="button" class="btn btn-danger ms-2">Eliminar proyecto</button>
+                <button type="button" class="btn btn-primary">Eliminar proyecto</button>
             </div>
         </form>
     )

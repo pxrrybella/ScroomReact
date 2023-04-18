@@ -2,6 +2,11 @@ import axios from "axios";
 
 const baseURL = 'http://localhost:8080/project';
 
+const projectGetAll = async () => {
+    const rest = await axios.get(baseURL+"/findAll");
+    return rest.data;
+}
+
 const projectAdd = async (project)  => {
     const rest =  await axios.post(baseURL+"/save", project);
      console.log(rest);
@@ -24,4 +29,4 @@ const projectDelete = async (id) => {
 
 
 
-export { projectAdd, projectEdit, projectDelete }
+export { projectAdd, projectEdit, projectDelete, projectGetAll }

@@ -5,14 +5,19 @@ import { useEffect, useState } from "react";
 import { getUserwebByUsername, userwebGetAll } from "../services/UserwebService";
 import TableMembers from "../components/TableMembers";
 import { getUserByProject } from "../services/UserwebProjectService";
+import { projectDelete } from "../services/ProjectService";
 
 const ProjectSettingPage = () => {
 
     const [userProject, setUserProject] = useState([]);
     const [userweb, setUserweb] = useState([]);
+    const [project, setProject] = useState([]);
 
+    const deleteProject = async (id) => {
+        await projectDelete(id);
+    }
 
-    const getUsersByProject= async () => {
+    const getUsersByProject = async () => {
         console.log(await getUserByProject());
         setUserProject(await getUserByProject());
     }
@@ -33,11 +38,16 @@ const ProjectSettingPage = () => {
                 <Banner userweb={userweb} />
             </div>
             <div>
-                <ProjectSetting />
-                <TableMembers
-                    userProject={userProject}/>
-                <div className="empty-space2"></div>
+                <div className="row m-3 shadow">
+                    <ProjectSetting
+                    project={project}
+                    deleteProject={deleteProject}/>
+                    <TableMembers
+                        userProject={userProject} />
+                </div>
             </div>
+            <div className="empty-space"></div>
+            <div className="empty-space2"></div>
         </div>
     )
 }
