@@ -108,3 +108,32 @@ body {
 .survey-send{
     color: black;
 }
+.slide_homepage{
+    display: flex;
+    color: black;
+    background-color: #79a1ff;
+    height: 75vh;
+}.slide_homepage h1{
+    font-weight: bold;
+    margin-left: 10vh;
+}.slide_text{
+    margin-top: 7vh;
+}.slide_text p{
+    margin-left: 10vh;
+    margin-right: 5vh;
+    margin-top: 5vh;
+    font-size: x-large;
+    height: 55%;
+}.slide_text .btn{
+    display: flex;
+    margin: 0 auto;
+    font-size: x-large;
+    font-weight: bold;
+}
+.slide_bg{
+    opacity: 60%;
+    object-fit: cover;
+}
+.prev_slide, .next_slide{
+    width: 10vh;
+}
