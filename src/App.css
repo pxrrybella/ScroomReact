@@ -137,3 +137,43 @@ body {
 .prev_slide, .next_slide{
     width: 10vh;
 }
+.why{
+    padding-top: 10vh;
+    margin-bottom: 25vh;
+}
+.why_description, .team_description{
+    text-align: center;
+    padding-top: 2vh;
+}.why_description p, .team_description p{
+    padding-left: 40vh;
+    padding-right: 40vh;
+}
+.stars_img{
+    width: 50%;
+    height: 50%;
+    padding-left: 2vh;
+    padding-top: 2vh;
+}
+.all_cards{
+    display: flex;
+    margin: 0 auto;
+    width: 85%;
+}.all_cards .card{
+    border-radius: 20px;
+}
+.all_cards .card img{
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+.card-group{
+    display: flex;
+    margin: 0 auto;
+    width: 80%;
+    
+}
+
+/* .card-img-top{
+    object-fit: cover;
+    height: 70%;
+    width: 100%;
+} */

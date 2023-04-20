@@ -3,6 +3,7 @@ import 'bootstrap/dist/js/bootstrap.js';
 import ContactUs from "../components/ContactUs";
 import SocialMedia from "../components/SocialMedia";
 import { BannerHomePage } from "../components/Banner";
+import { WhyInformation, PeopleInformation } from "../components/Information";
 import Slide from "../components/Slide";
 
 const HomePage = () => {
@@ -13,6 +14,15 @@ const HomePage = () => {
             </div>
             <div>
                 <Slide/>
+            </div>
+            <div>
+                {/* 
+                ENCUESTAS
+                METRICAS
+                SUGERENCIAS
+                 */}
+                <WhyInformation/>
+                <PeopleInformation/>
             </div>
             <div className="container text-center d-flex flex-column align-items-center mx-auto mt-20" style={{ marginTop: 120, marginBottom: 40 }}>
                 <h1><i>"Scroom es la mejor plataforma para cultivar un ambiente laboral positivo"</i></h1>

@@ -39,12 +39,16 @@ const BannerHomePage = () => {
         <header>
             <nav className="navbar navbar-expand-lg navbar-light">
                 <h1 className="ms-4">SCROOM</h1>
-                <Link to="#"><button class="btn btn-secondary ms-5" type="button">¿Por qué Scroom?</button></Link>
-                <Link to="#"><button class="btn btn-secondary ms-3" type="button">Quienes Somos</button></Link>
+                {/* <Link to="#"><button class="btn btn-secondary ms-5" type="button">¿Por qué Scroom?</button></Link> */}
+                {/* <Link to="#"><button class="btn btn-secondary ms-3" type="button">Quienes Somos</button></Link> */}
+                {/* <Link to="#"><button class="btn btn-secondary ms-3" type="button">Contactanos</button></Link> */}
+                <a href="#why" className="btn btn-secondary ms-5">¿Por qué Scroom?</a>
+                <a href="#who" className="btn btn-secondary ms-3">Quienes Somos</a>
+                <a href="#contact" className="btn btn-secondary ms-3">Contactanos</a>
                 <div className="collapse navbar-collapse" id="navbarCollapse">
                     <div className="navbar-nav ms-auto">
 
-                        <Link to="/CompanyRegister"><button class="btn btn-secondary me-3" type="button">¿Eres una empresa?</button></Link>
+                        <Link to="/CompanyRegister"><button class="btn btn-dark me-3" type="button">¿Eres una empresa?</button></Link>
                         <Link to="/Login"><button class="btn btn-secondary me-3" type="button">Inicia sesión</button></Link>
                         <Link to="/Register"><button class="btn btn-secondary" type="button">Regístrate</button></Link>
 

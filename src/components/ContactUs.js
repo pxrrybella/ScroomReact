@@ -3,7 +3,7 @@ import 'bootstrap/dist/js/bootstrap.js';
 
 const ContactUs = () => {
     return (
-        <div className="col-5" style={{ marginTop: 40, marginBottom: 80 }}>
+        <div className="col-5" id="contact" style={{ marginTop: 40, marginBottom: 80 }}>
             <h1>Formulario de contacto</h1>
             <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label"></label>
