@@ -23,6 +23,7 @@ body {
 }
 
 .flex-body {
+    background-color: rgb(225, 225, 255);
     background-image: url("./components/img/field_pixel.png");
     background-repeat: no-repeat;
     background-size: 100%;
@@ -139,14 +140,16 @@ body {
 }
 .why{
     padding-top: 10vh;
-    margin-bottom: 25vh;
+    padding-bottom: 10vh;
+    background-color: #a4bffe;
 }
 .why_description, .team_description{
     text-align: center;
-    padding-top: 2vh;
+    margin-bottom: 8vh;
 }.why_description p, .team_description p{
     padding-left: 40vh;
     padding-right: 40vh;
+    font-size: x-large;
 }
 .stars_img{
     width: 50%;
@@ -171,9 +174,45 @@ body {
     width: 80%;
     
 }
-
-/* .card-img-top{
-    object-fit: cover;
-    height: 70%;
-    width: 100%;
-} */
+.who{
+    background-color: #84a5f4;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+.functionalities{
+    background-color: #b6cdfd;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+.f1_card, .f2_card, .f3_card{
+    background-color: #F6F3EE;
+    width: 200vh;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}.functionalities p{
+    margin-top: 3vh;
+    font-size: large;
+    padding-right: 20vh;
+}
+.f_description{
+    margin-top: 10vh;
+    padding-left: 10vh;
+}
+.f_img img{
+    display: flex;
+    margin: 0 auto;
+    width: 90%;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.f1_card, .f3_card{
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.f2_card{
+    margin-left: auto;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}

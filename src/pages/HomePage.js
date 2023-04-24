@@ -3,7 +3,7 @@ import 'bootstrap/dist/js/bootstrap.js';
 import ContactUs from "../components/ContactUs";
 import SocialMedia from "../components/SocialMedia";
 import { BannerHomePage } from "../components/Banner";
-import { WhyInformation, PeopleInformation } from "../components/Information";
+import { WhyInformation, PeopleInformation, Functionalities } from "../components/Information";
 import Slide from "../components/Slide";
 
 const HomePage = () => {
@@ -21,6 +21,7 @@ const HomePage = () => {
                 METRICAS
                 SUGERENCIAS
                  */}
+                <Functionalities/>
                 <WhyInformation/>
                 <PeopleInformation/>
             </div>
