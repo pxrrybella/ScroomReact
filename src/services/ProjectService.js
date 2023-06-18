@@ -26,7 +26,14 @@ const projectDelete = async (id) => {
     
 }
 
+//función que trae todos los proyectos de los que el usuario es administrador
+const projectUserweb = async (admin_name) => {
+    const rest = await  axios.get(baseURL+"/userweb/"+ admin_name);
+    console.log(rest);
+    return rest.data;
+}
 
 
 
-export { projectAdd, projectEdit, projectDelete, projectGetAll }
+
+export { projectAdd, projectEdit, projectDelete, projectGetAll, projectUserweb }

@@ -23,7 +23,7 @@ const AnalyticsPage = () => {
         <Banner userweb={userweb}/>
         <div className='row'>
             <div className='row'>
-                <MenuAnalytics/>
+                <MenuAnalytics userweb={userweb}/>
                 <Sprints/>
                 <Analytics/>
             </div>

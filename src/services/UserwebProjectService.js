@@ -3,7 +3,7 @@ import axios from "axios";
 const baseURL = 'http://localhost:8080/userwebproject';
 
 const getProjectsByUsername = async (user) => {
-    user = 'isabella345'
+    user = 'mary111'
     const rest = await axios.get(baseURL + "/projectsByUserweb/" + user);
     console.log(rest);
     return rest.data;
@@ -11,7 +11,7 @@ const getProjectsByUsername = async (user) => {
 
 const getUserByProject = async () => {
     const rest = await axios.get(baseURL + '/userwebByProjects/2');
-    console.log(rest);
+    console.log("USERWEBPROJECTSERVICE",rest);
     return rest.data;
 }
 

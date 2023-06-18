@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
+import { getUserwebByUsername } from "../services/UserwebService"
 
 const ProjectCodeEnter = () => {
     return (
@@ -19,6 +20,12 @@ const projectDefault = {
 }
 
 const CreateProject = ({ agregarProject }) => {
+    
+    const [userweb, setUserweb] = useState([]);
+
+    const getUserweb = async() => {
+        setUserweb(await getUserwebByUsername());
+    }
 
     function codeGenerate() {
         const code = (Math.floor(1000000 + Math.random() * 9000000));
@@ -31,10 +38,16 @@ const CreateProject = ({ agregarProject }) => {
         const handleInputChange = {
             ...project,
             [p.target.name]: p.target.value,
-            "project_code": codeGenerate()
+            "project_code": codeGenerate(),
+            "admin_name": userweb.user_name
         }
         setProject(handleInputChange);
     }
+
+    useEffect(() => {
+        //instrucciones
+        getUserweb();
+    }, [])
 
     function handleSubmit(e) {
         e.preventDefault();

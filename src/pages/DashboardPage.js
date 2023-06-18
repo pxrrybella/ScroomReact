@@ -29,7 +29,7 @@ const DashboardPage = () => {
         <Banner userweb={userweb}/>
         <div className='row'>
             <div className='row'>
-                <Menu/>
+                <Menu userweb={userweb}/>
                 <Sprints/>
                 <Survey agregarEncuesta={agregarEncuesta} userweb={userweb}/>
             </div>

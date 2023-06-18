@@ -9,6 +9,11 @@ html, body {
     width: 100%;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
+
 body {
     background: rgb(207,232,255);
     background: linear-gradient(90deg, rgba(207,232,255,1) 0%, rgba(159,214,245,1) 100%);
@@ -107,4 +112,9 @@ body {
 }
 .survey-send{
     color: black;
+}
+
+.project-button {
+    text-decoration: none;
+    color: white;
 }

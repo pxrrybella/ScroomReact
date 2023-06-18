@@ -3,8 +3,9 @@ import axios from "axios";
 const baseURL = 'http://localhost:8080/userweb';
 
 const getUserwebByUsername = async() => {
-    const rest = await axios.get(baseURL+'/getById/mary111');
-    console.log(rest);
+    const user = "yago123"
+    const rest = await axios.get(baseURL+'/getById/'+user);
+    console.log(rest.data);
     return rest.data;
 }
 
