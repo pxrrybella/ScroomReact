@@ -12,25 +12,29 @@ Con esta informacion permitirá saber a las empresas la auto percepción que tie
 
 Todo esto hará que la empresa pueda tener una mejor perspectiva del bienestar general de sus trabajadores, permitiendo identificar posibles problemas a futuro.
 
-## Backend:
+## Frontend:
 
-Este repositorio corresponde al backend del proyecto, el cual está construido con MySQL y Java con Springboot (Maven project).
+Este repositorio corresponde al frontend del proyecto, el cual está construido con React.js (JavaScript, HTML, CSS - Bootstrap).
 
-Trabajamos con seis tablas para manejar la información de manera precisa obteniendo los datos a los que queremos acceder.
+Algunas funciones están disponibles, otras son meramente las vistas sin lógica detrás.
 
-## Dependencias:
-- spring-boot-devtools
-- spring-boot-starter-validation
-- spring-boot-starter-data-jpa
-- spring-boot-starter-test
-- spring-boot-starter-tomcat
-- spring-boot-starter-web
-- tomcat-embed-jasper
-- mysql-connector-java
-- lombok
-- jbcrypt
-- antlr
-- jstl
+## Paquetes:
+- axios
+- bootstrap
+- bootstrap-icons
+- react-router-dom
+- react-google-charts
+
+## Server local:
+Para acceder al sitio web desde un server local, usamos:
+- IDE Visual Studio Code
+- Node.js (para los comandos ``npm``)
+Una vez clonamos el repositorio, acceder a la terminal y usar el comando ``npm install`` para instalar los paquetes necesarios.
+
+Despúes usamos el comando ``npm start`` para acceder al sitio web desde un server local.
+
+Algunas funciones son beta, por ejemplo, para ingresar por el momento solo se puede ingresar al usuario "isabella345" (correo: isabella.rodriguez@email.com, contraseña: "contraseña456").
 
 ## Última actualización:
-- Query personalizada.
+- Lista de proyectos en el menú lateral.
+- Añadir nuevo proyecto.
